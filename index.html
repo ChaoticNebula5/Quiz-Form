@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLSC Web Dev Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz</h2>
+        <div class="timer" id="timer">Time: 60s</div>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the integral of cos(x)?</p>
+                <label><input type="radio" name="q1" value="a"> -sin(x)</label>
+                <label><input type="radio" name="q1" value="b"> cos(x)</label>
+                <label><input type="radio" name="q1" value="c"> sin(x)</label>
+                <label><input type="radio" name="q1" value="d"> tan(x)</label>
+            </div>
+            <div class="question">
+                <p>2. What is 1 + 1 = ?</p>
+                <label><input type="radio" name="q2" value="a"> 2</label>
+                <label><input type="radio" name="q2" value="b"> Window</label>
+                <label><input type="radio" name="q2" value="c"> 4</label>
+                <label><input type="radio" name="q2" value="d"> 11</label>
+            </div>
+            <div class="question">
+                <p>3. Derivative of sin(x)?</p>
+                <label><input type="radio" name="q3" value="a"> sec^2(x)</label>
+                <label><input type="radio" name="q3" value="b"> tan(x)</label>
+                <label><input type="radio" name="q3" value="c"> cos(x)</label>
+                <label><input type="radio" name="q3" value="d"> cosec(x)</label>
+            </div>
+            <div class="question">
+                <p>4. What is area of Ellipse?</p>
+                <label><input type="radio" name="q4" value="a"> pi*r^2</label>
+                <label><input type="radio" name="q4" value="b"> pi*a*b</label>
+                <label><input type="radio" name="q4" value="c"> 2*pi*r</label>
+                <label><input type="radio" name="q4" value="d"> a*b</label>
+            </div>
+            <div class="question">
+                <p>5. We love?</p>
+                <label><input type="radio" name="q5" value="a"> MLSC</label>
+                <label><input type="radio" name="q5" value="b"> .</label>
+                <label><input type="radio" name="q5" value="c"> .</label>
+                <label><input type="radio" name="q5" value="d"> .</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
